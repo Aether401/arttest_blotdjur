@@ -54,9 +54,8 @@ fn main() {
     for (swedish, latin) in swedish_names.iter().zip(latin_names.iter()) {
         dictionary.insert(swedish, latin);
     }
-    for (swedish, latin) in &dictionary{
+    for (swedish, latin) in &dictionary {
         println!("{} - {}", swedish, latin);
     }
-
 }
 // fn start_test() {}
